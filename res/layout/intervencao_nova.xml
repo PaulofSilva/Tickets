@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+novaintervencao/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+novaintervencao/ednome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+novaintervencao/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+novaintervencao/tvData"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+novaintervencao/tipoServico"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+novaintervencao/edData"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+novaintervencao/externo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Externo" />
+
+            <RadioButton
+                android:id="@+novaintervencao/interno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Interno" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+novaintervencao/edData"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+novaintervencao/tvHorai"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+novaintervencao/edData"
+            android:text="Hora"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+novaintervencao/edHorai"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+novaintervencao/edData"
+            android:layout_alignTop="@+novaintervencao/tvHorai"
+            android:ems="10"
+            android:inputType="time" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+novaintervencao/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+novaintervencao/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+novaintervencao/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone" />
+
+    <EditText
+        android:id="@+novaintervencao/edTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+novaintervencao/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+novaintervencao/edPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:maxLines="6"
+        android:maxWidth="200sp"
+        android:scrollHorizontally="true"
+        android:singleLine="false" />
+
+    <RelativeLayout
+        android:id="@+novaintervencao/RelativeLayoutBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+novaintervencao/btCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/cancelar" />
+
+        <ImageButton
+            android:id="@+novaintervencao/btGravar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/gravar" />
+
+    </RelativeLayout>
+
+</LinearLayout>
